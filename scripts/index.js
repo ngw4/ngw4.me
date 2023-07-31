@@ -1,6 +1,6 @@
 //when a element with the hidden class is clicked, play a type writer effect
 var hidden = true;
-var text = "wet toast#7683";
+var text = "ngw4";
 
 const typeWriter = (element, speed) => {
     hidden = false;
