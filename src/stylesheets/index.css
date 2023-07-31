@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Geologica:wght@300;800;900&family=Ubuntu:wght@700;300;400&display=swap');
+
+/* font-family: 'Alfa Slab One', cursive;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Geologica', sans-serif;*/
+
+#navcontainer{
+    padding-top: 40px;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 30px;
+}
+
+.homebutton{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding-right: 20%;
+}       
+
+#homebuttonicon{
+    color: #ffffff;
+}
+
+.homebuttontext{
+    color: white;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.homebuttontext::after{
+    background-color: whit;
+}
+
+.navitem{
+    color: white;
+    font-size: 15px;
+    transition: 50ms;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.main{
+    background-image: url(/src/media/dots.svg);
+    width: 1000px;
+    height: 500px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+body{
+    background-color: #0d1117;
+    margin: 0;
+    padding: 0;
+}
+
+.body{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#subheading{
+    padding-top: 50px;
+    color: #b3b3b3;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    text-align: center;
+}
+
+#bigassnameheader{
+    color: #ffffff;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 900;
+    font-size: 60px;
+    text-align: center;
+}
+
+#aboutme{
+    font-size: 17px;
+    text-align: center;
+    color: #b3b3b3;
+    font-family: 'Geologica', sans-serif;
+    font-weight: 700;
+}
+
+.link-underline {
+    display: inline-block;
+    position: relative;
+}
+  
+.link-underline::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+}
+  
+.link-underline:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+  
+.hyperlink{
+    color: #7167ff;
+    text-decoration: none;
+}
+.hyperlink::after{
+    background-color: #7167ff;
+    text-decoration: none;
+}
