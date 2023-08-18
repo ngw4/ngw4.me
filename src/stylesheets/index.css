@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=REM:wght@600&display=swap');
+
+:root{
+    --pointOfFocusComplementary: #d4c1a3;
+    --pointOfFocus: #dda074;
+    --background: #55465f;
+    --backgroundComplementary: #8e707b;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+html {
+    scrollbar-width: none;
+}
+
+body {
+    background-color: var(--background);
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+}
+
+section {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    padding: 0;
+    margin: 0;
+    height: 100vh;
+    overflow: hidden;
+    overflow-x: hidden;
+}
+
+#underConstructionText{
+    font-size: 7vw;
+    color: var(--pointOfFocus);
+    font-family: 'REM', sans-serif; 
+    cursor: default;   
+}
+
+@keyframes moveUpAndDown {
+    0% {
+        transform: translate(0, -300px);
+    }
+    100% {
+        color: #d8b97500 !important;
+        transform: translate(0, 300px);
+    }
+}
+
+#downArrow{
+    color: #d8b975 !important;
+    animation-iteration-count: infinite;
+    animation-name: moveUpAndDown;
+    animation-duration: 1.5s;
+    animation-iteration-count: infinite;
+}
+
+footer{
+    display: grid;
+    place-items: center;
+    
+    height: 33vh;
+
+    background-color: var(--backgroundComplementary);
+    overflow: visible;
+    font-family: 'REM', sans-serif; 
+    top: 100%;
+}
+
+.text{
+    text-align: center;
+    color: var(--pointOfFocusComplementary);
+}
+
