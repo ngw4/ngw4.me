@@ -16,8 +16,6 @@ targets.forEach((target) => {
     observer.observe(target);
 });
 
-//daddy github copilot wrote comments for me :3
-
 const text = document.querySelectorAll('#ngw4text');
 
 const textArray = ['____', 'n___', 'ng__', 'ngw_', 'ngw4']
@@ -27,6 +25,9 @@ const typeWriter = (textArray, element, speed) => {
         setTimeout(() => (element.innerHTML = word), speed * i);
     });
 };
-// wait 1 second and then start typewriter
 
+// typewrite
 typeWriter(textArray, text[0], 430)
+
+
+//daddy github copilot wrote comments for me :3
