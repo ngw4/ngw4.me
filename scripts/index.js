@@ -18,7 +18,7 @@ targets.forEach((target) => {
 
 
 const text = document.querySelectorAll('#ngw4text');
-const textArray = ['____', 'n___', 'ng__', 'ngw_', 'ngw4']
+const textArray = ['____', 'n___', 'ng__', 'ngw_', 'ngw4'];
 
 const typeWriter = (textArray, element, speed) => {
     textArray.forEach((word, i) => {
