@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,600;6..12,800&display=swap');
+
+main {
+    font-family: 'Nunito Sans', sans-serif;
+
+    color: #fff;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    text-align: center;
+}
+
+h1 {
+    font-weight: 800;
+}
+
+.subheader{
+    font-weight: 500;
+    color: #5c5c5c;
+}
+
+body {
+    background-image: url(../assets/topographybg.svg);
+    background-color: #060607;
+    background-repeat: repeat;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    animation-name: panning;
+    animation-duration:7000ms;
+    animation-iteration-count: infinite;
+    animation-delay: 0ms;
+    animation-timing-function: linear;
+
+    margin: 0;
+    padding: 0;
+    
+    width: 100vw;
+    height: 100vh;
+}
+
+.hyperlink{
+    font-weight: 800;
+    color: rgb(94, 125, 182);
+    transition: 100ms;
+}
+
+.hyperlink:hover{
+    cursor: pointer;
+    color: rgb(109, 142, 204);
+}
+
+.is-changing .transition-default {
+    transition: opacity 300ms;
+    opacity: 1;
+}
+
+.is-animating .transition-default {
+    opacity: 0;
+}
+
+@keyframes panning {
+    100% {
+        background-position-x: -600px;
+        background-position-y: -600px;
+    }
+}   
+
+.description {
+    width: 500px;
+    text-align: center;
+}
+
+.link-openinnew-svg {
+    color: #fff;
+    position: relative;
+    justify-self: flex-end;
+    padding-right: 7px;
+
+    
+    transition: 100ms;
+}
+
+.link-openinnew-text {
+    width: 100%;
+    height: 20px;
+
+    padding-left: 7px;
+
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 800;
+    color: #fff;
+
+    transition: 100ms;
+}
+
+.link-openinnew-container:hover {
+    background-color: #fff;
+}
+
+.link-openinnew-container:hover span {
+    color: #000000;
+}
+
+.link-openinnew-container {
+    cursor: pointer;
+
+    display: flex;
+    
+    transition: 100ms;
+
+    align-items: center;
+
+    border-width: 2px;
+    border-color: #fff;
+    border-radius: 4px;
+
+    border-style: solid;
+    width: 300px;
+    height: 40px;
+}

@@ -1,53 +1,33 @@
 <!DOCTYPE html>
 
-<html lang="en">
+<html lang="en"> 
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>ngw4</title>
-        <link rel="stylesheet" href="./css/index.css">
-        <script defer src="./scripts/index.js"></script>
+        <title>ngw4.me</title>
+        <script type="module" src="./src/global.js"></script>     
+        <link rel="stylesheet" href="./src/global.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" />
     </head>
     <body>
-        <section class="c1 container">
-            <h1 style=" font-size: 30px; color: black;" class="container-title">
-                Hi, i'm <span id="ngw4text"style="font-weight: 700;">____</span>.
-            </h1>
-        </section>
-        <div id="bigboycontainer">
-        <section class="c3 container">
-            <h2 class="container-subtitle hidden">
-                Languages
-            </h2>
-            <ul class="container-list hidden">
-                <li class="li-item">JavaScript (Node.js)</li>
-                <li class="li-item">Luau</li>
-                <li class="li-item">C#</li>
-                <li class="li-item">English</li>
-            </ul>
-        </section>
+        <main class="transition-default">
+            <h1>Hi, i'm ngw4.</h1>
+            <div class="description subheader">A passionate self-taught Roblox Studio developer 
+                with a knack for creating immersive experiences through programming, 3D modeling, and animation.
+                 You can find some of my work <span data-link="projects" class="hyperlink">here</span>. <br> <span style="font-weight: 800;">(Written by GPT 3.5)</span> </div>
+            
+            <div style="padding-bottom: 30px;"></div> <!-- padding -->
 
-        <section class="c4 container">
-            <h2 class="container-subtitle hidden">
-                My Projects
-            </h2>
-            <ul class="container-list hidden">
-                <li class="li-item">i am a placeholder.</li>
-                <li class="li-item">i am a placeholder.</li>
-                <li class="li-item">i am a placeholder.</li>
-            </ul>
-        </section>
 
-        <section class="c5 container">
-            <h2 class="container-subtitle hidden">
-                Socials
-            </h2>
-            <ul class="container-list hidden">
-                <li class="li-item">Contact: admin@ngw4.me</li>
-                <li class="li-item">Twitter: @_ngw4</li>
-                <li class="li-item">GitHub: ngw4</li>
-            </ul>
-        </section>
-    </div>  
+            <div data-link="https://github.com/ngw4/" class="link-openinnew-container">
+                <span class="link-openinnew-text">My Github</span>
+                <span class="link-openinnew-svg material-symbols-outlined">open_in_new</span>
+            </div>
+            <div style="padding-bottom: 9px;"></div> <!-- padding -->
+            <div data-link="https://x.com/_ngw4" class="link-openinnew-container">
+                <span class="link-openinnew-text">My Twitter</span>
+                <span class="link-openinnew-svg material-symbols-outlined">open_in_new</span>
+            </div>
+        </main>
     </body>
 </html>
