@@ -31,7 +31,7 @@ body {
     justify-content: center;
 
     animation-name: panning;
-    animation-duration:7000ms;
+    animation-duration: 16000ms;
     animation-iteration-count: infinite;
     animation-delay: 0ms;
     animation-timing-function: linear;
